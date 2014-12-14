@@ -17,6 +17,9 @@ end
   get 'main/index'
   root 'main#index'
 
+get '/room/:id', to: 'main#room' , as: 'main_room'
+get '/category/:id', to: 'main#category' , as: 'main_category'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
